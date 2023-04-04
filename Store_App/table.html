@@ -1,0 +1,22 @@
+<h1>Accessory Table</h1>
+
+<table bord = 1>
+    <thread>
+        <td><b>itemname</b></td>
+        <td><b>Quantorderd</b></td>
+        <td><b>Quantremain</b></td>
+        <td><b>Vendorname</b></td>
+        <td><b>Purchase pricing</b></td>
+        <td><b>Selling pricing</b></td>
+    </thread>
+    {% for i in all %}
+    <tr>
+        <td>{{i.itemname}}</td>
+        <td>{{i.quantorderd}}</td>
+        <td>{{i.quantremain}}</td>
+        <td>{{i.vendorname}}</td>
+        <td>{{i.purchase_price}}</td>
+        <td>{{i.selling_price}}</td>
+    </tr>
+    {% endfor %}
+</table>

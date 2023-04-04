@@ -1,18 +1,18 @@
-size=int(input("Enter a size for the hexagon:"))
+# Defining the size of the hexagon
+size = 4
 
-#validate input
-if size.digit():
-    print("invalid input. Please enter a positive integer.")
-    exit()
+# Define the number of spaces to add before each line of asterisks
+spaces = size - 1
 
-size=int(size)
+# Print the top half of the hexagon
+for i in range(size):
+    print(' ' * spaces, end='')
+    print('* ' * (i + 1))
+    spaces -= 1
 
-#print the hexagon
-for i in range(1,2*size):
-    if i<=size:
-        print(""*(size-i)+"*"*1)
-
-    else:
-        print(""*(i-size)+"*"*(2*size-i))
-    
-        
+# Print the bottom half of the hexagon
+spaces = 1
+for i in range(size - 1):
+    print(' ' * spaces, end='')
+    print('* ' * (size - i - 1))
+    spaces += 1

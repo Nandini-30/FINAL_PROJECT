@@ -19,7 +19,7 @@ class Store(db.Model):
     datetimeupdated=db.Column(db.Integer(), unique=True, nullable=False)
 
 def __init__(self,quanorder,nameacc,quanremain,vendornam,pppi,sppi,datetimeadd,datetimeupdated):
-    self.quanorder
+    self.quanorder 
     self.nameacc
     self.quanremain
     self.vendornam
